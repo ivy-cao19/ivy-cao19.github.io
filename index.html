@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Scripts -->
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- style -->
+    <link rel="stylesheet" href="index.css" type="text/css">
+
+    <!-- scripts -->
+    <script src="text-effect.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./static/dark-mode.js" defer></script>
+    <title>TC</title>
+</head>
+<body>
+    <div id="ambient" style="overflow:hidden; position:absolute; width:100%; height:100vh;"></div>
+    <section style="font-family:Ubuntu Mono,sans-serif" class="d-flex justify-content-center align-items-center flex-column gap-5" style="z-index:1">
+
+        <h1>Hi, I'm Ivy.</h1>
+        <h1 >I love 
+            <span
+               class="txt-rotate"
+               data-period="2000"
+               data-rotate='[ "machine learning 🧠", "building software 🛠", "launching products 🚀"]'
+               data-colors='["#9b4cea", "#00ddad", "#ffc964"]'>
+            </span>
+        </h1>
+             
+        <div class="navbar d-flex align-items-center gap-5" style="position:absolute; bottom: 5vh">
+            <a href="#aboutSection" class="bounce"><i class="uil uil-arrow-down"></i></a>
+        </div>
+    </section>
+    <section id="aboutSection">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav w-100 justify-content-between px-5">
+                <li class="nav-item active p-3">
+                  <!-- <a class="nav-link" href="#">Things I've been doing<span class="sr-only"></span></a> -->
+                </li>
+                <!-- <li>
+                    <div class="links d-flex gap-3 align-items-center justify-content-center" style="font-size: 3rem">
+                        <span class="mail">
+                            <a href="mailto:tom.cohen@columbia.edu" class=""><i class="uil uil-at"></i></a>
+                        </span>
+                        <span class="github">
+                            <a href="https://github.com/tomcohen13/" class=""><i class="uil uil-github"></i></a>
+                        </span>
+                        <span class="linkedin">
+                            <a href="https://www.linkedin.com/in/tom-cohen1/" class=""><i class="uil uil-linkedin"></i></a>
+                        </span>
+                        
+                      </div>
+                </li> -->
+              </ul>
+            </div>
+        </nav>
+        <div class="row h-100" style="padding:20px">
+            
+            
+            <!-- Skills -->
+            <div class="col-6 skills px-5">
+                <!-- <h2>Skills</h2> -->
+                <div class="categories">
+                    <div class="category box1" id="main">
+                        <h3 class="">Filter by your interest</h3>
+                        <div class="tags">
+                            <span class = "btn swe" id="showSWE" disabled>Software</span>
+                            <input hidden id="sweClicked" name="sweClicked" type="checkbox" checked>
+                            <span class = "btn ml" id="showML" disabled>Machine Learning</span>
+                            <input hidden id="mlClicked" name="mlClicked" type="checkbox" checked>
+                        </div>
+                    </div>
+                    <div class="category box3" id="langs">
+                        <h4 class="">Languages & Libraries</h4>
+                        <div class="tags">
+                            <span class = "btn swe lang" disabled>Python</span>
+                            <span class = "btn ml lib"disabled>numpy</span>
+                            <span class = "btn ml lib"disabled>pandas</span>
+                            <span class = "btn ml lib"disabled>TensorFlow</span>
+                            <span class = "btn ml lib"disabled>sklearn</span>
+                            <span class = "btn ml lib"disabled>seaborn</span>
+                            <span class = "btn swe lib"disabled>Flask</span>
+                            <span class = "btn swe lang" disabled>SQL</span>
+                            <span class = "btn swe lang" disabled>Git</span>
+                            <span class = "btn swe lang" disabled>HTML</span>
+                            <span class = "btn swe lang" disabled>CSS</span>
+                            <span class = "btn swe lib" disabled>Bootstrap</span>
+                            <span class = "btn swe lang" disabled>JavaScript</span>
+                            <span class = "btn swe lang" disabled>Java</span>
+                            <span class = "btn swe lang" disabled>Go</span>
+                            <span class = "btn swe lang" disabled>C/C++</span>
+                        </div>
+                    </div>
+                    <div class="category box2" id="tools">
+                        <h4 class="">Tools</h4>
+                        <div class="tags">
+                            <span class = "btn swe lib" disabled>MySQL</span>
+                            <span class = "btn swe lib" disabled>Neo4j</span>
+                            <span class = "btn swe lib" disabled>MongoDB</span>
+                            <span class = "btn swe lib" disabled>Kubernetes</span>
+                            <span class = "btn swe lib" disabled>AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fancy Timeline -->
+            <div class="col-6 tl" style="font-family:Muli,sans-serif">
+                <!-- <h2 class="mb-1">Some of the things I've been doing</h2> -->
+                <ul class="timeline accordion accordion-flush" id = "accordionFlushExample">
+                    <li class="timeline-item accordion-item ml-item swe-item">
+                        <div class="timeline-info">
+                            <span>Aug 2022 - Present</span>
+                        </div>
+                        <div class="timeline-markers">
+                            <div class="timeline-marker"></div>
+                        </div>
+                        <h3 class="timeline-title accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Software Engineer | Amazon
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            Working on the F3 Search Query team.
+                          </div>
+                        </div>
+                    </li>
+                    <li class="timeline-item accordion-item swe-item">
+                        <div class="timeline-info">
+                            <span>June 2022 - Aug 2022</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <h3 class="timeline-title accordion-header" id="flush-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Software Engineer Intern | Datadog
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            Working on the Metrics Intake team.
+                          </div>
+                        </div>
+                    </li>
+                    <li class="timeline-item accordion-item columbia-item">
+                        <div class="timeline-info">
+                            <span>Sep 2019 - May 2022</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <h3 class="timeline-title accordion-header" id="flush-headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            B.S. Columbia University
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <p class="">B.S. in Computer Science, graduated in 3 years</p>
+                            <p class=""><strong>CS Coursework: </strong>Distributed Systems, NLP, Operating Systems, AI, Analysis of Algorithms, Databases, Data Structures</p>
+                          </div>
+                        </div>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+        <div class="navbar d-flex align-items-center gap-5 justify-content-center" style="bottom: 5vh">
+            <a href="#randomSection" class="bounce"><i class="uil uil-arrow-down"></i></a>
+        </div>
+    </section>
+    <section id="randomSection">
+        <div class="container collections h-100">
+            <div class="row w-100">
+                <div class="col">
+                    <div class="h3">Reading List 📚</div>
+                    <iframe src="https://v1.embednotion.com/embed/3f42b2ead34e4a3bb7e838298e3f55d0"></iframe>  <style>  iframe { width: 100%; height: 500px; border: transparent; border-radius: 10px; padding: none; }  </style>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script> 
+        SWE = document.getElementsByClassName("swe-item");
+        sweTags = document.getElementsByClassName("swe");
+        ML = document.getElementsByClassName("ml-item");
+        document.getElementById("showSWE").addEventListener("click", onlySWE);
+        document.getElementById("showML").addEventListener("click", onlyML);
+        // Show only SWE items
+        function showAll() {
+            for (let i = 0; i < ML.length; i++ ){
+                ML[i].style.display = "list-item";
+            }
+            for (let i = 0; i < SWE.length; i++ ){
+                SWE[i].style.display = "list-item";
+            }
+            for (let i = 0; i < sweTags.length; i++ ){
+                sweTags[i].style.display = "block";
+            }
+        }
+        function onlySWE() {
+            clicked = document.getElementById("sweClicked")
+            if (clicked.checked == true){
+                clicked.checked = false;
+                for (let i = 0; i < SWE.length; i++ ){
+                    SWE[i].style.display = "none";
+                }
+                document.getElementById("showSWE").style.backgroundColor = "gray";
+            }
+            else{
+                clicked.checked = true;
+                for (let i = 0; i < SWE.length; i++ ){
+                    SWE[i].style.display = "list-item";
+                    document.getElementById("showSWE").style.backgroundColor = "var(--swe-color)";
+                }
+            }
+        }
+        function onlyML() {
+            clicked = document.getElementById("mlClicked");
+            if (clicked.checked == true){
+                clicked.checked = false;
+                for (let i = 0; i < ML.length; i++ ){
+                    ML[i].style.display = "none";
+                }
+                document.getElementById("showML").style.backgroundColor = "gray";
+            }
+            else{
+                clicked.checked = true;
+                for (let i = 0; i < ML.length; i++ ){
+                    ML[i].style.display = "list-item";
+                    document.getElementById("showML").style.backgroundColor = "var(--ml-color)";
+                }
+            }
+        }
+    </script>
+    <script>
+        libs = document.getElementsByClassName("lib")
+        for(let i = 0; i < libs.length; i++){
+            var lib = libs[i]
+            var classList = lib.className.split(' ')
+            if(classList.includes("ml")){
+                color = "var(--ml-color)"
+            }
+            else{
+                color = "var(--swe-color)"
+            }
+            lib.style.borderColor = color
+            lib.style.backgroundColor = "transparent"
+        }
+    </script>
+</body>
+</html>
